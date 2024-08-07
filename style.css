@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+/* Basic styling */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s;
+}
+/* Main container */
+.container {
+  padding-top: 4.25rem;
+  justify-content: center;
+  align-items: center;
+}
+/* container Content */
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-family: "Edu AU VIC WA NT Hand", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
+}
+
+/* Button design */
+.containerBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+  padding: 0.625rem 1.25rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #2980b9;
+  }
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-bottom: 0.625rem;
+    }
+  }
+  /* Media query for larger screens */
+  @media screen and (min-width: 601px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-right: 0.625rem;
+    }
+  }
+  /* Media query for tablet screens */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-right: 0.625rem;
+    }
+  }
+}
+
+.reset-btn {
+  background-color: #c0392b;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #e74c3c;
+  }
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-bottom: 0.625rem;
+    }
+  }
+  /* Media query for larger screens */
+  @media screen and (min-width: 601px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-right: 0.625rem;
+    }
+  }
+  /* Media query for tablet screens */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-right: 0.625rem;
+    }
+  }
+  /* Media query for desktop screens */
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-right: 0.625rem;
+    }
+  }
+  /* Media query for large desktop screens */
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button {
+      margin-right: 0.625rem;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 8.8rem;
+  z-index: 1;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  top: 80%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
